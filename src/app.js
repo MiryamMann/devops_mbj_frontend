@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-   
+   <>
     <div className="App">
       <header className="App-header">
         <h1>Welcome to The Miri's App!!!</h1>
@@ -21,7 +21,7 @@ function App() {
         <p>{message}</p>
       </header>
     </div>
-   
+   </>
   );
 }
 
