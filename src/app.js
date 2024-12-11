@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import './App.css';
+import  'https://storage.googleapis.com/miri-mann-bucket2/App.css';
+
 
 function App() {
   const [message, setMessage] = useState('');
 
   const fetchData = () => {
-    fetch('http://35.186.197.121:5000/api')
+fetch('http://35.186.197.121:5000/api')
       .then(response => response.json())
       .then(data => setMessage(data.message))
       .catch(error => console.error('Error fetching data:', error));
+      
   };
 
   return (
